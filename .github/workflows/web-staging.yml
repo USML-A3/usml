@@ -1,0 +1,44 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: ["dev"]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules/
+          key: node-modules-${{ hashFiles('package-lock.json') }}
+
+      - name: Installing Angular
+        run: |
+          npm install -g @angular/cli
+
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          npm install
+
+      - name: Build Angular app
+        run: |
+          ng build --configuration production --aot --output-hashing=all --base-href /
+          ls www
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: www # The folder the action should deploy.
+          branch: staging
