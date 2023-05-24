@@ -5,6 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './intro-section.component.html',
   styleUrls: ['./intro-section.component.scss']
 })
-export class IntroSectionComponent {
+export class IntroSectionComponent{
+
+  isOpen = false;
+  handleClick = () => {
+    this.isOpen = !this.isOpen 
+  }
 
 }
