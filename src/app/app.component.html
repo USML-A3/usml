@@ -1,15 +1,25 @@
-<app-navbar />
-<app-intro-section />
-<app-about />
-<app-cta />
-<app-branches />
-<app-testimonials />
-<app-media-grid />
-<app-counter-up />
-<app-members />
-<app-social />
-<app-contact />
-<app-footer />
+<nb-layout>
+  <nb-layout-header fixed>
+    <app-navbar />
+  </nb-layout-header>
 
-<!-- <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> -->
-<!-- Scroll to top button -->
+  <nb-layout-column class="nb-layout-column-fix">
+    <app-intro-section />
+    <app-about />
+    <app-cta />
+    <app-branches />
+    <app-testimonials />
+    <app-media-grid />
+    <app-counter-up />
+    <app-members />
+    <app-social />
+    <app-contact />
+
+    <!-- <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> -->
+    <!-- Scroll to top button -->
+  </nb-layout-column>
+
+  <nb-layout-footer >
+    <app-footer />
+  </nb-layout-footer>
+</nb-layout>

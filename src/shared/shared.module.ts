@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NbMenuModule } from '@nebular/theme';
 
 import { AppRoutingModule } from '../app/app-routing.module';
 
@@ -15,7 +16,6 @@ import { AboutComponent } from './components/about/about.component';
 import { CounterUpComponent } from './components/counter-up/counter-up.component';
 import { MediaGridComponent } from './components/media-grid/media-grid.component';
 import { ContactComponent } from './components/contact/contact.component';
-
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -31,7 +31,7 @@ import { ContactComponent } from './components/contact/contact.component';
     MediaGridComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, NbMenuModule],
   providers: [],
   bootstrap: [],
   exports: [

@@ -279,13 +279,13 @@ section {
 }
 #text-carousel-intro-section .caption {
 	position: relative;
-	top: 50%;
+	top: 30%;
 	margin-top: -70px;
 }
 #text-carousel-intro-section .caption h1 {
 	margin-top: 0;
-	/* margin-bottom: 5px; */
-	font-size: 60px;
+	margin-bottom: 5px;
+	font-size: 50px;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
