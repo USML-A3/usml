@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NbThemeModule, NbLayoutModule, NbMenuModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbMenuModule, NbMenuService } from '@nebular/theme';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,12 +15,12 @@ import { SharedModule } from '../shared/shared.module';
     AppRoutingModule,
     SharedModule,
     BrowserAnimationsModule,
-    NbThemeModule.forRoot({ name: 'dark' }),
+    NbThemeModule.forRoot({ name: 'default' }),
     NbMenuModule.forRoot(),
     NbLayoutModule,
     NbEvaIconsModule,
   ],
-  providers: [],
+  providers: [NbMenuService, ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
