@@ -15,7 +15,7 @@ import { SharedModule } from '../shared/shared.module';
     AppRoutingModule,
     SharedModule,
     BrowserAnimationsModule,
-    NbThemeModule.forRoot({ name: 'default' }),
+    NbThemeModule.forRoot({ name: 'dark' }),
     NbMenuModule.forRoot(),
     NbLayoutModule,
     NbEvaIconsModule,

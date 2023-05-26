@@ -6,11 +6,12 @@
 #nb-layout-header-custom-style{
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
 }
 ::ng-deep nb-layout-header nav{
   padding: 0 !important;
+  box-shadow: none !important;
 }
 .app-navbar-styles {
   width: 100%;
