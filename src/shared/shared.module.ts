@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NbMenuModule } from '@nebular/theme';
+import { NbMenuModule, NbMenuService } from '@nebular/theme';
 
 import { AppRoutingModule } from '../app/app-routing.module';
 
@@ -32,7 +32,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NbMenuModule],
-  providers: [],
+  providers: [NbMenuService],
   bootstrap: [],
   exports: [
     NavbarComponent,

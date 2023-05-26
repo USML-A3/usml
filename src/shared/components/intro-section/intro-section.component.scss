@@ -1,0 +1,12 @@
+#text-carousel-intro-section .item {
+  position: relative;
+  z-index: 1;
+}
+#text-carousel-intro-section video {
+  position: fixed;
+  top: 7%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}

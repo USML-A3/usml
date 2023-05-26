@@ -1,9 +1,11 @@
 <nb-layout>
-  <nb-layout-header fixed>
-    <app-navbar />
+  
+  <nb-layout-header id="nb-layout-header-custom-style">
+    <app-navbar class="app-navbar-styles"/>
   </nb-layout-header>
 
-  <nb-layout-column class="nb-layout-column-fix">
+  <nb-layout-column class="nb-layout-column-custom-style">
+    <!-- <app-navbar/> -->
     <app-intro-section />
     <app-about />
     <app-cta />
@@ -17,9 +19,9 @@
 
     <!-- <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> -->
     <!-- Scroll to top button -->
+    <app-footer />
   </nb-layout-column>
 
-  <nb-layout-footer >
-    <app-footer />
-  </nb-layout-footer>
+  <!-- <nb-layout-footer >
+  </nb-layout-footer> -->
 </nb-layout>
