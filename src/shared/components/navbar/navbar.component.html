@@ -1,60 +1,35 @@
 <header id="header" class="header-main">
-    <nav
-      id="main-navbar"
-      class="navbar navbar-default navbar-fixed-top navbar-fix"
-      role="navigation"
-    >
-      <div class="container">
-        <div class="navbar-header">
-          <div class="navbar-header">
-            <a class="page-scroll" href="index.html"
-              ><img
-                class="usml-logo"
-                src="../../../assets/img/usmlcascoblancochico.png"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-<!-- <header id="header" class="header-main">
   <nav
     id="main-navbar"
     class="navbar navbar-default navbar-fixed-top navbar-fix"
     role="navigation"
   >
-    
-
     <div class="container">
-      <div class="navbar-header">
-        <div class="navbar-header">
+      <div class="navbar-header navbar-container">
+        <div class="navbar-header navbar-item-container">
           <a class="page-scroll" href="index.html"
             ><img
               class="usml-logo"
               src="../../../assets/img/usmlcascoblancochico.png"
           /></a>
         </div>
+        <div class="navbar-link navbar-item-container">
+          <a class="link-item">Nosotros</a>
+          <a class="link-item">Enlistarse</a>
+        </div>
       </div>
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a class="page-scroll" href="body">Home</a></li>
-          <li><a class="page-scroll" href="#about-section">About</a></li>
-          <li>
-            <a class="page-scroll" href="#services-section">Services</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#portfolio-section">Works</a>
-          </li>
-          <li><a class="page-scroll" href="#team-section">Team</a></li>
-          <li>
-            <a class="page-scroll" href="#prices-section">Prices</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#contact-section">Contact</a>
-          </li>
-        </ul>
+      <div class="navbar-burger">
+        <nb-icon icon="menu-outline" (click)="onClick()" />
+      </div>
+      <div class="sidebar" [ngStyle]="{ right: toggleMenu ? '-100%' : '0%' }">
+        <div class="sidebar-burger">
+          <nb-icon icon="close-outline" (click)="onClick()" />
+        </div>
+        <div>
+          <p>1</p>
+          <p>2</p>
+        </div>
       </div>
     </div>
   </nav>
-</header> -->
+</header>

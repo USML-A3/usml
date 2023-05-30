@@ -1,8 +1,58 @@
+// Logo size
 .usml-logo {
   width: 22%;
 }
-.navbar-fix{
-  // position: fixed;
+
+.navbar-fix {
   width: 100%;
   z-index: 10;
+}
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-item-container {
+  width: 300px;
+}
+.navbar-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.link-item {
+  padding-right: 1rem;
+  font-size: 1.25rem;
+}
+.navbar-burger {
+  display: none;
+  position: absolute;
+  right: 0;
+  padding-right: 3.1rem;
+  transform: scale(1.5);
+}
+.sidebar {
+  position: fixed;
+  top: 0px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #2e3036;
+  width: 150px;
+  text-align: center;
+  transition: 0.3s;
+  height: 100vh;
+}
+.sidebar-burger {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  transform: scale(1.5);
+}
+
+@media (max-width: 576px) {
+  .navbar-link {
+    display: none;
+  }
+  .navbar-burger {
+    display: block;
+  }
 }

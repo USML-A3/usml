@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NbMenuModule, NbMenuService } from '@nebular/theme';
+import { NbMenuModule, NbMenuService, NbIconModule } from '@nebular/theme';
 
 import { AppRoutingModule } from '../app/app-routing.module';
 
@@ -31,7 +31,7 @@ import { ContactComponent } from './components/contact/contact.component';
     MediaGridComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NbMenuModule],
+  imports: [BrowserModule, AppRoutingModule, NbMenuModule, NbIconModule],
   providers: [NbMenuService],
   bootstrap: [],
   exports: [
