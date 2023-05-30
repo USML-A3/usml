@@ -24,6 +24,9 @@
   padding-right: 1rem;
   font-size: 1.25rem;
 }
+.link-item:hover {
+  cursor: pointer;
+}
 .navbar-burger {
   display: none;
   position: absolute;
@@ -47,7 +50,9 @@
   padding-bottom: 1.5rem;
   transform: scale(1.5);
 }
-
+.sidebar-items {
+  font-size: 1.25rem;
+}
 @media (max-width: 576px) {
   .navbar-link {
     display: none;
