@@ -7,3 +7,21 @@
 #contact-section .page-header {
   margin-top: 1.4rem;
 }
+.icon-container {
+  width: 50%;
+  display: grid;
+}
+.icon-container a {
+  justify-self: center;
+  margin-top: 2rem;
+}
+.discord-icon {
+  color: whitesmoke;
+  transform: scale(1.5);
+}
+.input-form {
+  color: whitesmoke !important;
+}
+.enlist-form-button {
+  color: whitesmoke;
+}
