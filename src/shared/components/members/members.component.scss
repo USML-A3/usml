@@ -1,0 +1,27 @@
+
+.row-items-container{
+  justify-content: center;
+}
+.row-items-container-bottom {
+  margin-top: 7rem;
+  padding-bottom: 5rem;
+}
+.grid-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.item-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .row-items-container-bottom {
+    margin-top: 0;
+  }
+  .row-items {
+    margin-top: 5rem;
+  }
+}
