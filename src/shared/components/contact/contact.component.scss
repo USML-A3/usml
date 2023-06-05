@@ -25,6 +25,10 @@
 .enlist-form-button {
   color: whitesmoke;
 }
+.title-fix {
+  position: relative;
+  z-index: 2;
+}
 @media (max-width: 768px) {
   .icon-container {
     margin-bottom: 2rem;
