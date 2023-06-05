@@ -18,3 +18,15 @@
 .force-title {
   margin: 0 !important;
 }
+
+@media (max-width: 768px) {
+  .container-center {
+    flex-direction: column;
+  }
+  .row-container {
+    justify-content: center;
+  }
+  .branch-container{
+    padding: 0;
+  }
+}
