@@ -25,3 +25,9 @@
 .enlist-form-button {
   color: whitesmoke;
 }
+@media (max-width: 768px) {
+  .icon-container {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}
