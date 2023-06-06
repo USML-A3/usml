@@ -1,3 +1,11 @@
 #social-section {
   background-color: #2e3036;
 }
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-icon {
+  transform: scale(1.5);
+  padding-left: 1rem;
+}
