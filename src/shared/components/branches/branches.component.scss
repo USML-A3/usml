@@ -19,12 +19,25 @@
   margin: 0 !important;
 }
 
+@media (max-width: 1024px) {
+  .container-center{
+    justify-content: center;
+  }
+  .branches-logo{
+    height: 250px;
+    width: 250px;
+  }
+}
 @media (max-width: 768px) {
+  .branches-logo {
+    height: 350px;
+    width: 350px;
+  }
+  .row-container{
+    justify-content: center;
+  }
   .container-center {
     flex-direction: column;
-  }
-  .row-container {
-    justify-content: center;
   }
   .branch-container{
     padding: 0;
