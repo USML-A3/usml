@@ -15,4 +15,14 @@
 .cta-button {
   border-radius: 0.5rem !important;
   border: 1px transparent;
+  background-color: #4da338;
+}
+.cta-button:hover {
+  background-color: #69bd2a;
+}
+@media (max-width: 768px) {
+  .container .row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
