@@ -4,10 +4,13 @@
 
   <div class="page-header-wrapper">
     <div class="container">
-      <div class="page-header text-center wow fadeInDown title-fix" data-wow-delay="0.4s">
+      <div
+        class="page-header text-center wow fadeInDown title-fix"
+        data-wow-delay="0.4s"
+      >
         <h2>Enlistate ahora mismo!</h2>
         <div class="devider"></div>
-        <p class="subtitle">All to contact us</p>
+        <p class="subtitle">No te pierdas la acción</p>
       </div>
     </div>
   </div>
@@ -34,12 +37,18 @@
         <div class="col-sm-5">
           <div class="contact-form">
             <h4>O enlistate desde la web!</h4>
-            <form role="form" class="enlist-form">
+            <form
+              role="form"
+              class="enlist-form"
+              [formGroup]="enlistForm"
+              (ngSubmit)="onSubmit()"
+            >
               <div class="form-group">
                 <input
                   type="text"
                   class="form-control input-lg input-form"
                   placeholder="Tu Nombre y apellido*"
+                  formControlName="name"
                   required
                 />
               </div>
@@ -48,6 +57,7 @@
                   type="text"
                   class="form-control input-lg input-form"
                   placeholder="Nickname para Arma3*"
+                  formControlName="nickname"
                   required
                 />
               </div>
@@ -56,6 +66,7 @@
                   type="text"
                   class="form-control input-lg input-form"
                   placeholder="URL a tu perfil o codigo de amigo de Steam*"
+                  formControlName="steam"
                   required
                 />
               </div>
@@ -64,6 +75,7 @@
                   type="text"
                   class="form-control input-lg input-form"
                   placeholder="Usuario de discord (Opcional, nos permite contactarte)"
+                  formControlName="discord"
                 />
               </div>
               <div class="form-group">
@@ -71,6 +83,7 @@
                   class="form-control input-lg input-form"
                   rows="5"
                   placeholder="¿Fuiste miembro de alguna comunidad de ArmA III?"
+                  formControlName="pastHistory"
                   required
                 ></textarea>
               </div>
@@ -78,6 +91,7 @@
                 type="submit"
                 class="btn wow bounceInRight enlist-form-button"
                 data-wow-delay="0.8s"
+                [disabled]="!enlistForm.valid"
               >
                 Send
               </button>

@@ -16,6 +16,7 @@ import { AboutComponent } from './components/about/about.component';
 import { CounterUpComponent } from './components/counter-up/counter-up.component';
 import { MediaGridComponent } from './components/media-grid/media-grid.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -31,7 +32,7 @@ import { ContactComponent } from './components/contact/contact.component';
     MediaGridComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NbMenuModule, NbIconModule],
+  imports: [BrowserModule, AppRoutingModule, NbMenuModule, NbIconModule, ReactiveFormsModule],
   providers: [NbMenuService],
   bootstrap: [],
   exports: [
