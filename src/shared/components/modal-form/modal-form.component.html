@@ -1,0 +1,63 @@
+<div id="modal-form">
+  <div class="cta-form">
+    <form
+      role="form"
+      class="enlist-form"
+      [formGroup]="enlistForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control input-lg input-form"
+          placeholder="Tu Nombre y apellido*"
+          formControlName="name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control input-lg input-form"
+          placeholder="Nickname para Arma3*"
+          formControlName="nickname"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control input-lg input-form"
+          placeholder="URL a tu perfil o codigo de amigo de Steam*"
+          formControlName="steam"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control input-lg input-form"
+          placeholder="Usuario de discord (Opcional, nos permite contactarte)"
+          formControlName="discord"
+        />
+      </div>
+      <div class="form-group">
+        <textarea
+          class="form-control input-lg input-form"
+          rows="5"
+          placeholder="¿Fuiste miembro de alguna comunidad de ArmA III?*"
+          formControlName="pastHistory"
+          required
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        class="btn wow bounceInRight cta-enlist-form-button"
+        data-wow-delay="0.8s"
+        [disabled]="!enlistForm.valid"
+      >
+        Enviar
+      </button>
+    </form>
+  </div>
+</div>

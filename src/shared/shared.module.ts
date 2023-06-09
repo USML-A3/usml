@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NbMenuModule, NbMenuService, NbIconModule } from '@nebular/theme';
+import {
+  NbMenuModule,
+  NbMenuService,
+  NbIconModule,
+  NbDialogModule,
+} from '@nebular/theme';
 
 import { AppRoutingModule } from '../app/app-routing.module';
 
@@ -17,6 +22,7 @@ import { CounterUpComponent } from './components/counter-up/counter-up.component
 import { MediaGridComponent } from './components/media-grid/media-grid.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ModalFormComponent } from './components/modal-form/modal-form.component';
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -31,8 +37,16 @@ import { ReactiveFormsModule } from '@angular/forms';
     CounterUpComponent,
     MediaGridComponent,
     ContactComponent,
+    ModalFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NbMenuModule, NbIconModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NbMenuModule,
+    NbIconModule,
+    ReactiveFormsModule,
+    NbDialogModule.forChild(),
+  ],
   providers: [NbMenuService],
   bootstrap: [],
   exports: [
@@ -48,6 +62,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CounterUpComponent,
     MediaGridComponent,
     ContactComponent,
+    ModalFormComponent,
   ],
 })
-export class SharedModule {}
+export class SharedModule {
+}

@@ -1,0 +1,33 @@
+#modal-form {
+  width: 50vw;
+  height: 50vh;
+  background: fixed;
+  background-color: #2e3036;
+  border: 1px solid #2e3036;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+}
+.cta-form {
+  padding-top: 2rem;
+  width: 80%;
+  height: 80%;
+}
+.input-form {
+  color: whitesmoke;
+  background-color: #363940;
+  border-color: #363940;
+}
+.input-form {
+  resize: none;
+}
+
+.cta-enlist-form-button {
+  color: whitesmoke;
+
+  width: 100%;
+  background-color: #4da338 !important;
+}
+.cta-enlist-form-button:hover {
+  background-color: #69bd2a !important;
+}

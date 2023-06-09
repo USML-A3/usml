@@ -6,6 +6,7 @@ import {
   NbMenuModule,
   NbMenuService,
   NbIconModule,
+  NbDialogModule,
 } from '@nebular/theme';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -26,8 +27,11 @@ import { SharedModule } from '../shared/shared.module';
     NbLayoutModule,
     NbEvaIconsModule,
     NbIconModule,
+    NbDialogModule.forRoot(),
   ],
   providers: [NbMenuService],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  
+}
