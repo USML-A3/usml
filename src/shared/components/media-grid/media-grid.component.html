@@ -18,67 +18,11 @@
           <div class="portfoloi_content_area">
             <div class="portfolio_content">
               <div class="row" id="portfolio">
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-4" *ngFor="let i of mediaGridData">
                   <app-media-card
-                    [imgName]="'Kivu 1 square.jpg'"
-                    [title]="'USMLOPS Kivu'"
-                    [spanText]="'N' + '`' + 'Ziwasogo'"
-                  />
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <app-media-card
-                    [imgName]="'Kivu 2 square.jpg'"
-                    [title]="'USMLOPS Kivu'"
-                    [spanText]="'N' + '`' + 'Ziwasogo'"
-                  />
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <app-media-card
-                    [imgName]="'Escudo de Paz 1 square.jpg'"
-                    [title]="'Operacion Escudo de Paz'"
-                    [spanText]="'Misión no oficial'"
-                  />
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <app-media-card
-                    [imgName]="'Escudo de Paz 2 square.jpg'"
-                    [title]="'Operacion Escudo de Paz'"
-                    [spanText]="'Misión no oficial'"
-                  />
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <app-media-card
-                    [imgName]="'Napf 1 square.png'"
-                    [title]="'USMLOPS'"
-                    [spanText]="'Napf'"
-                  />
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <app-media-card
-                    [imgName]="'Napf 2 square.jpg'"
-                    [title]="'USMLOPS'"
-                    [spanText]="'Napf'"
-                  />
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <app-media-card
-                    [imgName]="'Napf 4 square.jpg'"
-                    [title]="'USMLOPS'"
-                    [spanText]="'Napf'"
-                  />
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <app-media-card
-                    [imgName]="'Rosario 1 square.jpg'"
-                    [title]="'Operación Rosario'"
-                    [spanText]="'Misión no oficial'"
-                  />
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <app-media-card
-                    [imgName]="'Rosario 2 square.jpg'"
-                    [title]="'Operación Rosario'"
-                    [spanText]="'Misión no oficial'"
+                    [imgName]="i.imgName"
+                    [title]="i.title"
+                    [spanText]="i.spanText"
                   />
                 </div>
               </div>
