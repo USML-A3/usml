@@ -1,0 +1,30 @@
+<nb-flip-card [showToggleButton]="false" [flipped]="isFlipped">
+  <nb-card-front>
+    <nb-card class="card-container" (click)="handleClick()">
+      <div class="flip-card-both-sides flip-card-front">
+        <img
+          src="../../../assets/img/usml/grid/{{ imgName }}"
+          alt="{{ title }}"
+        />
+        <div>
+          <a>{{ title }}</a>
+          <span>{{ spanText }}</span>
+        </div>
+      </div>
+    </nb-card>
+  </nb-card-front>
+  <nb-card-back>
+    <nb-card class="card-container" (click)="handleClick()">
+      <div class="flip-card-both-sides flip-card-back">
+        <img
+          src="../../../assets/img/usml/grid/{{ imgName }}"
+          alt="{{ title }}"
+        />
+        <div>
+          <a>{{ title }}</a>
+          <span>{{ spanText }}</span>
+        </div>
+      </div>
+    </nb-card>
+  </nb-card-back>
+</nb-flip-card>

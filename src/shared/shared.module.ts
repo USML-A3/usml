@@ -5,6 +5,7 @@ import {
   NbMenuService,
   NbIconModule,
   NbDialogModule,
+  NbCardModule,
 } from '@nebular/theme';
 
 import { AppRoutingModule } from '../app/app-routing.module';
@@ -23,6 +24,7 @@ import { MediaGridComponent } from './components/media-grid/media-grid.component
 import { ContactComponent } from './components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ModalFormComponent } from './components/modal-form/modal-form.component';
+import { MediaCardComponent } from './components/media-card/media-card.component';
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -38,6 +40,7 @@ import { ModalFormComponent } from './components/modal-form/modal-form.component
     MediaGridComponent,
     ContactComponent,
     ModalFormComponent,
+    MediaCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,7 @@ import { ModalFormComponent } from './components/modal-form/modal-form.component
     NbIconModule,
     ReactiveFormsModule,
     NbDialogModule.forChild(),
+    NbCardModule,
   ],
   providers: [NbMenuService],
   bootstrap: [],
@@ -63,6 +67,7 @@ import { ModalFormComponent } from './components/modal-form/modal-form.component
     MediaGridComponent,
     ContactComponent,
     ModalFormComponent,
+    MediaCardComponent,
   ],
 })
 export class SharedModule {

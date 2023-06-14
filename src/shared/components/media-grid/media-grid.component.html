@@ -1,4 +1,3 @@
-<!-- Begin Portfolio -->
 <section id="portfolio-section" class="page bg-style1">
   <div class="container">
     <div class="row">
@@ -17,145 +16,70 @@
             </div>
           </div>
           <div class="portfoloi_content_area">
-            <!-- <div class="portfolio_menu" id="filters">
-              <ul>
-                <li class="active_prot_menu">
-                  <a href="#porfolio_menu" data-filter="*">all</a>
-                </li>
-                <li>
-                  <a href="#porfolio_menu" data-filter=".websites">websites</a>
-                </li>
-                <li>
-                  <a href="#porfolio_menu" data-filter=".webDesign"
-                    >web design</a
-                  >
-                </li>
-                <li>
-                  <a href="#porfolio_menu" data-filter=".appsDevelopment"
-                    >apps development</a
-                  >
-                </li>
-                <li>
-                  <a href="#porfolio_menu" data-filter=".GraphicDesign"
-                    >graphic design</a
-                  >
-                </li>
-                <li>
-                  <a href="#porfolio_menu" data-filter=".responsive"
-                    >responsive</a
-                  >
-                </li>
-              </ul>
-            </div> -->
             <div class="portfolio_content">
               <div class="row" id="portfolio">
-                <div class="col-xs-12 col-sm-4 appsDevelopment">
-                  <div class="portfolio_single_content">
-                    <img
-                      src="../../../assets/img/usml/grid/Kivu 1 square.jpg"
-                      alt="title"
-                    />
-                    <div>
-                      <a href="#">USMLOPS Kivu</a>
-                      <span>N'Ziwasogo</span>
-                    </div>
-                  </div>
+                <div class="col-xs-12 col-sm-4">
+                  <app-media-card
+                    [imgName]="'Kivu 1 square.jpg'"
+                    [title]="'USMLOPS Kivu'"
+                    [spanText]="'N' + '`' + 'Ziwasogo'"
+                  />
                 </div>
-                <div class="col-xs-12 col-sm-4 GraphicDesign">
-                  <div class="portfolio_single_content">
-                    <img
-                      src="../../../assets/img/usml/grid/Kivu 2 square.jpg"
-                      alt="title"
-                    />
-                    <div>
-                      <a href="#">USMLOPS Kivu</a>
-                      <span>N'Ziwasogo</span>
-                    </div>
-                  </div>
+                <div class="col-xs-12 col-sm-4">
+                  <app-media-card
+                    [imgName]="'Kivu 2 square.jpg'"
+                    [title]="'USMLOPS Kivu'"
+                    [spanText]="'N' + '`' + 'Ziwasogo'"
+                  />
                 </div>
-                <div class="col-xs-12 col-sm-4 responsive">
-                  <div class="portfolio_single_content">
-                    <img
-                      src="../../../assets/img/usml/grid/Escudo de Paz 1 square.jpg"
-                      alt="title"
-                    />
-                    <div>
-                      <a href="#">Operacion Escudo de Paz</a>
-                      <span>Mision no oficial</span>
-                    </div>
-                  </div>
+                <div class="col-xs-12 col-sm-4">
+                  <app-media-card
+                    [imgName]="'Escudo de Paz 1 square.jpg'"
+                    [title]="'Operacion Escudo de Paz'"
+                    [spanText]="'Misión no oficial'"
+                  />
                 </div>
-                <div class="col-xs-12 col-sm-4 webDesign websites">
-                  <div class="portfolio_single_content">
-                    <img
-                      src="../../../assets/img/usml/grid/Escudo de Paz 2 square.jpg"
-                      alt="title"
-                    />
-                    <div>
-                      <a href="#">Operacion Escudo de Paz</a>
-                      <span>Mision no oficial</span>
-                    </div>
-                  </div>
+                <div class="col-xs-12 col-sm-4">
+                  <app-media-card
+                    [imgName]="'Escudo de Paz 2 square.jpg'"
+                    [title]="'Operacion Escudo de Paz'"
+                    [spanText]="'Misión no oficial'"
+                  />
                 </div>
-                <div class="col-xs-12 col-sm-4 appsDevelopment websites">
-                  <div class="portfolio_single_content">
-                    <img
-                      src="../../../assets/img/usml/grid/Napf 1 square.png"
-                      alt="title"
-                    />
-                    <div>
-                      <a href="#">USMLOPS</a>
-                      <span>Napf</span>
-                    </div>
-                  </div>
+                <div class="col-xs-12 col-sm-4">
+                  <app-media-card
+                    [imgName]="'Napf 1 square.png'"
+                    [title]="'USMLOPS'"
+                    [spanText]="'Napf'"
+                  />
                 </div>
-                <div class="col-xs-12 col-sm-4 GraphicDesign">
-                  <div class="portfolio_single_content">
-                    <img
-                      src="../../../assets/img/usml/grid/Napf 2 square.jpg"
-                      alt="title"
-                    />
-                    <div>
-                      <a href="#">USMLOPS</a>
-                      <span>Napf</span>
-                    </div>
-                  </div>
+                <div class="col-xs-12 col-sm-4">
+                  <app-media-card
+                    [imgName]="'Napf 2 square.jpg'"
+                    [title]="'USMLOPS'"
+                    [spanText]="'Napf'"
+                  />
                 </div>
-                <div class="col-xs-12 col-sm-4 responsive">
-                  <div class="portfolio_single_content">
-                    <img
-                      src="../../../assets/img/usml/grid/Napf 4 square.jpg"
-                      alt="title"
-                    />
-                    <div>
-                      <a href="#">USMLOPS</a>
-                      <span>Napf</span>
-                    </div>
-                  </div>
+                <div class="col-xs-12 col-sm-4">
+                  <app-media-card
+                    [imgName]="'Napf 4 square.jpg'"
+                    [title]="'USMLOPS'"
+                    [spanText]="'Napf'"
+                  />
                 </div>
-                <div class="col-xs-12 col-sm-4 GraphicDesign">
-                  <div class="portfolio_single_content">
-                    <img
-                      src="../../../assets/img/usml/grid/Rosario 1 square.jpg"
-                      alt="title"
-                    />
-                    <div>
-                      <a href="#">Operacion Rosario</a>
-                      <span>Mision no oficial</span>
-                    </div>
-                  </div>
+                <div class="col-xs-12 col-sm-4">
+                  <app-media-card
+                    [imgName]="'Rosario 1 square.jpg'"
+                    [title]="'Operación Rosario'"
+                    [spanText]="'Misión no oficial'"
+                  />
                 </div>
-                <div class="col-xs-12 col-sm-4 websites">
-                  <div class="portfolio_single_content">
-                    <img
-                      src="../../../assets/img/usml/grid/Rosario 2 square.jpg"
-                      alt="title"
-                    />
-                    <div>
-                      <a href="#">Operacion Rosario</a>
-                      <span>Mision no Oficial</span>
-                    </div>
-                  </div>
+                <div class="col-xs-12 col-sm-4">
+                  <app-media-card
+                    [imgName]="'Rosario 2 square.jpg'"
+                    [title]="'Operación Rosario'"
+                    [spanText]="'Misión no oficial'"
+                  />
                 </div>
               </div>
             </div>
@@ -165,4 +89,3 @@
     </div>
   </div>
 </section>
-<!-- End portfolio -->
