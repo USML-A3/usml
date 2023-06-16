@@ -1,102 +1,379 @@
 <section id="team-section" class="page">
-  <div class="page-header-wrapper">
-    <div class="container">
-      <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-        <h2>El Parlamento</h2>
-        <div class="devider"></div>
-        <p class="subtitle">Equipo directivo</p>
+  <nb-tabset class="tabs-container">
+    <nb-tab tabTitle="Cratos">
+      <nb-accordion class="accordion-container" multi>
+        <nb-accordion-item *ngIf="cratosSoldado.length > 0">
+          <nb-accordion-item-header>
+            <div class="item-header-container">
+              <img
+                class="rank-img"
+                src="../../../assets/img/usml/rangos/sable/1Soldado.png"
+              />
+              <p>Soldado</p>
+            </div>
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            <div class="member-items-container">
+              <div class="member-items" *ngFor="let i of cratosSoldado">
+                <p>{{ i.name }}</p>
+              </div>
+            </div>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+
+        <nb-accordion-item *ngIf="cratosCadete.length > 0">
+          <nb-accordion-item-header>
+            <div class="item-header-container">
+              <img
+                class="rank-img"
+                src="../../../assets/img/usml/rangos/sable/0Recluta copy 2.png"
+              />
+              <p>Cadete</p>
+            </div>
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            <nb-accordion-item-body>
+              <div class="member-items-container">
+                <div class="member-items" *ngFor="let i of cratosCadete">
+                  <p>{{ i.name }}</p>
+                </div>
+              </div>
+            </nb-accordion-item-body>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+
+        <nb-accordion-item *ngIf="cratosRecluta.length > 0">
+          <nb-accordion-item-header>
+            <div class="item-header-container">
+              <!-- <img
+                class="rank-img"
+                src="../../../assets/img/usml/rangos/sable/0Recluta copy 2.png"
+              /> -->
+              <p class="recluta-header">Recluta</p>
+            </div>
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            <div class="member-items-container">
+              <div class="member-items" *ngFor="let i of cratosRecluta">
+                <p>{{ i.name }}</p>
+              </div>
+            </div>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+      </nb-accordion>
+    </nb-tab>
+    <nb-tab tabTitle="Sable">
+      <nb-accordion class="accordion-container" multi>
+        <nb-accordion-item *ngIf="sableSargento.length > 0">
+          <nb-accordion-item-header>
+            <div class="item-header-container">
+              <img
+                class="rank-img"
+                src="../../../assets/img/usml/rangos/sable/7Sargento.png"
+              />
+              <p>Sargento</p>
+            </div>
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            <div class="member-items-container">
+              <div class="member-items" *ngFor="let i of sableSargento">
+                <p>{{ i.name }}</p>
+              </div>
+            </div>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+        <nb-accordion-item *ngIf="sableCabo1ero.length > 0">
+          <nb-accordion-item-header>
+            <div class="item-header-container">
+              <img
+                class="rank-img"
+                src="../../../assets/img/usml/rangos/sable/6Cabo1ero.png"
+              />
+              <p>Cabo 1ero</p>
+            </div>
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            <div class="member-items-container">
+              <div class="member-items" *ngFor="let i of sableCabo1ero">
+                <p>{{ i.name }}</p>
+              </div>
+            </div>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+        <nb-accordion-item *ngIf="sableCabo2do.length > 0">
+          <nb-accordion-item-header>
+            <div class="item-header-container">
+              <img
+                class="rank-img"
+                src="../../../assets/img/usml/rangos/sable/5Cabo2do.png"
+              />
+              <p>Cabo</p>
+            </div>
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            <div class="member-items-container">
+              <div class="member-items" *ngFor="let i of sableCabo2do">
+                <p>{{ i.name }}</p>
+              </div>
+            </div>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+        <nb-accordion-item *ngIf="sableCabo.length > 0">
+          <nb-accordion-item-header>
+            <div class="item-header-container">
+              <img
+                class="rank-img"
+                src="../../../assets/img/usml/rangos/sable/4Cabo.png"
+              />
+              <p>Cabo</p>
+            </div>
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            <div class="member-items-container">
+              <div class="member-items" *ngFor="let i of sableCabo">
+                <p>{{ i.name }}</p>
+              </div>
+            </div>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+        <nb-accordion-item *ngIf="sableSoldado1ra.length > 0">
+          <nb-accordion-item-header>
+            <div class="item-header-container">
+              <img
+                class="rank-img"
+                src="../../../assets/img/usml/rangos/sable/3Soldado1era.png"
+              />
+              <p>Soldado de 1ra</p>
+            </div>
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            <div class="member-items-container">
+              <div class="member-items" *ngFor="let i of sableSoldado1ra">
+                <p>{{ i.name }}</p>
+              </div>
+            </div>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+        <nb-accordion-item *ngIf="sableSoldado2da.length > 0">
+          <nb-accordion-item-header>
+            <div class="item-header-container">
+              <img
+                class="rank-img"
+                src="../../../assets/img/usml/rangos/sable/2Soldado2da.png"
+              />
+              <p>Soldado de 2da</p>
+            </div>
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            <div class="member-items-container">
+              <div class="member-items" *ngFor="let i of sableSoldado2da">
+                <p>{{ i.name }}</p>
+              </div>
+            </div>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+        <nb-accordion-item *ngIf="sableSoldado.length > 0">
+          <nb-accordion-item-header>
+            <div class="item-header-container">
+              <img
+                class="rank-img"
+                src="../../../assets/img/usml/rangos/sable/2Soldado.png"
+              />
+              <p>Soldado de 2da</p>
+            </div>
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            <div class="member-items-container">
+              <div class="member-items" *ngFor="let i of sableSoldado">
+                <p>{{ i.name }}</p>
+              </div>
+            </div>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+      </nb-accordion>
+    </nb-tab>
+    <nb-tab tabTitle="Hades">
+      <nb-accordion class="accordion-container" multi>
+        <nb-accordion-item *ngIf="hadesSeniorAirman.length > 0">
+          <nb-accordion-item-header>
+            <div class="item-header-container">
+              <img
+                class="rank-img"
+                src="../../../assets/img/usml/rangos/hades/Senior Airman.png"
+              />
+              <p>Senior Airman</p>
+            </div>
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            <div class="member-items-container">
+              <div class="member-items" *ngFor="let i of hadesSeniorAirman">
+                <p>{{ i.name }}</p>
+              </div>
+            </div>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+
+        <nb-accordion-item *ngIf="hadesAirmanFirstClass.length > 0">
+          <nb-accordion-item-header>
+            <div class="item-header-container">
+              <img
+                class="rank-img"
+                src="../../../assets/img/usml/rangos/hades/Airman First Class.png"
+              />
+              <p>Airman First Class</p>
+            </div>
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            <div class="member-items-container">
+              <div class="member-items" *ngFor="let i of hadesAirmanFirstClass">
+                <p>{{ i.name }}</p>
+              </div>
+            </div>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+
+        <nb-accordion-item *ngIf="hadesAirman.length > 0">
+          <nb-accordion-item-header>
+            <div class="item-header-container">
+              <img
+                class="rank-img"
+                src="../../../assets/img/usml/rangos/hades/Airman.png"
+              />
+              <p>Airman</p>
+            </div>
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            <div class="member-items-container">
+              <div class="member-items" *ngFor="let i of hadesAirman">
+                <p>{{ i.name }}</p>
+              </div>
+            </div>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+      </nb-accordion>
+    </nb-tab>
+    <nb-tab tabTitle="Parlamento">
+      <div class="page-header-wrapper">
+        <div class="container">
+          <div
+            class="page-header text-center wow fadeInDown"
+            data-wow-delay="0.4s"
+          >
+            <h2>El Parlamento</h2>
+            <div class="devider"></div>
+            <p class="subtitle">Equipo directivo</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="container grid-container">
-    <div class="row row-items-container">
-      <div class="col-md-3 row-items">
-        <div class="team-container wow bounceIn" data-wow-delay="0.6s">
-          <div class="team-item">
-            <div class="team-triangle">
-              <div class="content">
-                <img src="../../../assets/img/usml/members/Kicillof.jpg" alt="title" />
-                <div class="team-hover text-center item-text-container">
-                  <p>Kicillof</p>
+      <div class="container grid-container">
+        <div class="row row-items-container">
+          <div class="col-md-3 row-items">
+            <div class="team-container wow bounceIn" data-wow-delay="0.6s">
+              <div class="team-item">
+                <div class="team-triangle">
+                  <div class="content">
+                    <img
+                      src="../../../assets/img/usml/members/Kicillof.jpg"
+                      alt="title"
+                    />
+                    <div class="team-hover text-center item-text-container">
+                      <p>Kicillof</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 row-items">
+            <div class="team-container wow bounceIn" data-wow-delay="0.7s">
+              <div class="team-item">
+                <div class="team-triangle">
+                  <div class="content">
+                    <img
+                      src="../../../assets/img/usml/members/Ghost.jpg"
+                      alt="title"
+                    />
+                    <div class="team-hover text-center item-text-container">
+                      <p>Ghost</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 row-items">
+            <div class="team-container wow bounceIn" data-wow-delay="0.8s">
+              <div class="team-item">
+                <div class="team-triangle">
+                  <div class="content">
+                    <img
+                      src="../../../assets/img/usml/members/Ponce.jpg"
+                      alt="title"
+                    />
+                    <div class="team-hover text-center item-text-container">
+                      <p>Ponce</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="row row-items-container row-items-container-bottom">
+          <div class="col-md-3 row-items">
+            <div class="team-container wow bounceIn" data-wow-delay="0.5s">
+              <div class="team-item">
+                <div class="team-triangle">
+                  <div class="content">
+                    <img
+                      src="../../../assets/img/usml/members/Deknop.png"
+                      alt="title"
+                    />
+                    <div class="team-hover text-center item-text-container">
+                      <p>Deknop</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 row-items">
+            <div class="team-container wow bounceIn" data-wow-delay="0.6s">
+              <div class="team-item">
+                <div class="team-triangle">
+                  <div class="content">
+                    <img
+                      src="../../../assets/img/usml/members/Kombuchaman.jpg"
+                      alt="title"
+                    />
+                    <div class="team-hover text-center item-text-container">
+                      <p>Kombuchaman</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 row-items">
+            <div class="team-container wow bounceIn" data-wow-delay="0.7s">
+              <div class="team-item">
+                <div class="team-triangle">
+                  <div class="content">
+                    <img
+                      src="../../../assets/img/usml/members/Userkaft.jpg"
+                      alt="title"
+                    />
+                    <div class="team-hover text-center item-text-container">
+                      <p>Userkaft</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-3 row-items">
-        <div class="team-container wow bounceIn" data-wow-delay="0.7s">
-          <div class="team-item">
-            <div class="team-triangle">
-              <div class="content">
-                <img src="../../../assets/img/usml/members/Ghost.jpg" alt="title" />
-                <div class="team-hover text-center item-text-container">
-                  <p>Ghost</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 row-items">
-        <div class="team-container wow bounceIn" data-wow-delay="0.8s">
-          <div class="team-item">
-            <div class="team-triangle">
-              <div class="content">
-                <img src="../../../assets/img/usml/members/Ponce.jpg" alt="title" />
-                <div class="team-hover text-center item-text-container">
-                  <p>Ponce</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-    <div class="row row-items-container row-items-container-bottom">
-      <div class="col-md-3 row-items">
-        <div class="team-container wow bounceIn" data-wow-delay="0.5s">
-          <div class="team-item">
-            <div class="team-triangle">
-              <div class="content">
-                <img src="../../../assets/img/usml/members/Deknop.png" alt="title" />
-                <div class="team-hover text-center item-text-container">
-                  <p>Deknop</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 row-items">
-        <div class="team-container wow bounceIn" data-wow-delay="0.6s">
-          <div class="team-item">
-            <div class="team-triangle">
-              <div class="content">
-                <img src="../../../assets/img/usml/members/Kombuchaman.jpg" alt="title" />
-                <div class="team-hover text-center item-text-container">
-                  <p>Kombuchaman</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 row-items">
-        <div class="team-container wow bounceIn" data-wow-delay="0.7s">
-          <div class="team-item">
-            <div class="team-triangle">
-              <div class="content">
-                <img src="../../../assets/img/usml/members/Userkaft.jpg" alt="title" />
-                <div class="team-hover text-center item-text-container">
-                  <p>Userkaft</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    </nb-tab>
+  </nb-tabset>
 </section>

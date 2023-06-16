@@ -6,6 +6,8 @@ import {
   NbIconModule,
   NbDialogModule,
   NbCardModule,
+  NbTabsetModule,
+  NbAccordionModule,
 } from '@nebular/theme';
 
 import { AppRoutingModule } from '../app/app-routing.module';
@@ -50,6 +52,8 @@ import { MediaCardComponent } from './components/media-card/media-card.component
     ReactiveFormsModule,
     NbDialogModule.forChild(),
     NbCardModule,
+    NbTabsetModule,
+    NbAccordionModule,
   ],
   providers: [NbMenuService],
   bootstrap: [],
@@ -70,5 +74,4 @@ import { MediaCardComponent } from './components/media-card/media-card.component
     MediaCardComponent,
   ],
 })
-export class SharedModule {
-}
+export class SharedModule {}

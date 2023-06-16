@@ -1,17 +1,76 @@
+//  Nebular Tabset
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.tabs-container nb-tab {
+  width: 100%;
+}
+// Nebular Accordion
 
-.row-items-container{
+.accordion-container {
+  margin-top: 1rem;
+  box-shadow: none;
+}
+.accordion-container nb-accordion-item {
+  background-color: #363940;
+}
+.accordion-container nb-accordion-item-header {
+  border: 0;
+  display: flex;
+  justify-content: center;
+}
+.item-header-container {
+  width: 200px;
+  display: flex;
+}
+.item-header-container p {
+  margin-left: 5px;
+  font-weight: bold;
+}
+.recluta-header {
+  margin-left: 30px !important;
+}
+.member-items-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: auto;
+  max-width: 40%;
+}
+.member-items {
+
+  margin-top: 1rem;
+}
+.rank-img {
+  height: 20px;
+  width: auto;
+  margin-right: 5px;
+}
+.arrow-icon {
+  color: whitesmoke;
+}
+// Parlamento content
+.page-header-wrapper {
+  margin-top: 1rem;
+}
+.row-items-container {
   justify-content: center;
 }
 .row-items-container-bottom {
   margin-top: 7rem;
   padding-bottom: 5rem;
 }
-.grid-container{
+.grid-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
+
 .item-text-container {
   display: flex;
   align-items: center;
