@@ -9,7 +9,7 @@ export class MembersComponent {
   members: Members[] = [
     { name: 'Kicillof', branch: 'Sable', rank: 'Sargento', status: false },
     { name: 'JDSimoza', branch: 'Sable', rank: 'Sargento', status: false },
-    { name: 'Ghost', branch: 'Sable', rank: 'Cabo 1ero', status: true },
+    { name: 'Ghost', branch: 'Sable', rank: 'Cabo 2do', status: true },
     { name: 'JBenison', branch: 'Hades', rank: 'Capitan', status: false },
     { name: 'Ponce', branch: 'Sable', rank: 'Cabo', status: true },
     {
