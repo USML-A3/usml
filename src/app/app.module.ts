@@ -9,17 +9,17 @@ import {
   NbDialogModule,
 } from '@nebular/theme';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, routingComponents],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     SharedModule,
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'dark' }),
