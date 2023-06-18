@@ -8,6 +8,7 @@ import {
   NbCardModule,
   NbTabsetModule,
   NbAccordionModule,
+  NbUserModule,
 } from '@nebular/theme';
 
 import { AppRoutingModule } from '../app/app-routing.module';
@@ -27,23 +28,29 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ModalFormComponent } from './components/modal-form/modal-form.component';
 import { MediaCardComponent } from './components/media-card/media-card.component';
+import { CentcomSidebarComponent } from './components/centcom-sidebar/centcom-sidebar.component';
+import { CentcomHeaderComponent } from './components/centcom-header/centcom-header.component';
+
+const componentDeclarationExports = [
+  NavbarComponent,
+  IntroSectionComponent,
+  FooterComponent,
+  BranchesComponent,
+  MembersComponent,
+  SocialComponent,
+  TestimonialsComponent,
+  CtaComponent,
+  AboutComponent,
+  CounterUpComponent,
+  MediaGridComponent,
+  ContactComponent,
+  ModalFormComponent,
+  MediaCardComponent,
+  CentcomSidebarComponent,
+  CentcomHeaderComponent,
+];
 @NgModule({
-  declarations: [
-    NavbarComponent,
-    IntroSectionComponent,
-    FooterComponent,
-    BranchesComponent,
-    MembersComponent,
-    SocialComponent,
-    TestimonialsComponent,
-    CtaComponent,
-    AboutComponent,
-    CounterUpComponent,
-    MediaGridComponent,
-    ContactComponent,
-    ModalFormComponent,
-    MediaCardComponent,
-  ],
+  declarations: componentDeclarationExports,
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -54,24 +61,10 @@ import { MediaCardComponent } from './components/media-card/media-card.component
     NbCardModule,
     NbTabsetModule,
     NbAccordionModule,
+    NbUserModule,
   ],
   providers: [NbMenuService],
   bootstrap: [],
-  exports: [
-    NavbarComponent,
-    IntroSectionComponent,
-    FooterComponent,
-    BranchesComponent,
-    MembersComponent,
-    SocialComponent,
-    TestimonialsComponent,
-    CtaComponent,
-    AboutComponent,
-    CounterUpComponent,
-    MediaGridComponent,
-    ContactComponent,
-    ModalFormComponent,
-    MediaCardComponent,
-  ],
+  exports: componentDeclarationExports,
 })
 export class SharedModule {}

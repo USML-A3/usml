@@ -7,6 +7,8 @@ import {
   NbMenuService,
   NbIconModule,
   NbDialogModule,
+  NbSidebarModule,
+  NbSidebarService,
 } from '@nebular/theme';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
@@ -28,8 +30,9 @@ import { SharedModule } from '../shared/shared.module';
     NbEvaIconsModule,
     NbIconModule,
     NbDialogModule.forRoot(),
+    NbSidebarModule,
   ],
-  providers: [NbMenuService],
+  providers: [NbMenuService, NbSidebarService],
   bootstrap: [AppComponent],
 })
 export class AppModule {

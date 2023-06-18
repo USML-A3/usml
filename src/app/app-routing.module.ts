@@ -8,6 +8,9 @@ const routes: Routes = [
   {
     path: 'centcom',
     component: CentcomComponent,
+    // children: [
+    //   {path: 'test', component: TestComponent}
+    // ]
   },
 ];
 

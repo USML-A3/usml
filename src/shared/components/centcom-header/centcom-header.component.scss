@@ -1,0 +1,9 @@
+#centcom-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+::ng-deep #centcom-header nb-user .user-picture {
+  border: 1px solid transparent;
+  border-radius: 5rem;
+}
