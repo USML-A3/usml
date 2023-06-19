@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NbSidebarService } from '@nebular/theme';
 
 @Component({
   selector: 'app-centcom',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./centcom.component.scss']
 })
 export class CentcomComponent {
+
+
+  constructor(private sidebarService: NbSidebarService) {
+  }
+
+  toggleCompact() {
+    this.sidebarService.toggle(true, 'left');
+  }
 
 }

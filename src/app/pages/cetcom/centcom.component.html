@@ -1,5 +1,13 @@
 <nb-layout>
-  <nb-layout-header><app-centcom-header class="app-centcom-header"/></nb-layout-header>
-  <nb-sidebar state="compacted"><app-centcom-sidebar /></nb-sidebar>
+  <nb-layout-header>
+    <nb-icon
+      icon="menu-outline"
+      (click)="toggleCompact()"
+      class="burger-icon"
+    />
+    <app-centcom-header class="app-centcom-header" />
+  </nb-layout-header>
+  <nb-sidebar tag="left" state="compacted"><app-centcom-sidebar /></nb-sidebar>
   <nb-layout-column><router-outlet></router-outlet> </nb-layout-column>
 </nb-layout>
+1
