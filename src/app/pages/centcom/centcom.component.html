@@ -1,5 +1,5 @@
-<nb-layout>
-  <nb-layout-header>
+<nb-layout id="centcom-container">
+  <nb-layout-header class="header-container">
     <nb-icon
       icon="menu-outline"
       (click)="toggleCompact()"
@@ -7,7 +7,10 @@
     />
     <app-centcom-header class="app-centcom-header" />
   </nb-layout-header>
-  <nb-sidebar tag="left" state="compacted"><app-centcom-sidebar /></nb-sidebar>
-  <nb-layout-column><router-outlet></router-outlet> </nb-layout-column>
+  <nb-sidebar tag="left" state="compacted" class="sidebar-container"
+    ><app-centcom-sidebar
+  /></nb-sidebar>
+  <nb-layout-column class="layout-container"
+    ><router-outlet></router-outlet>
+  </nb-layout-column>
 </nb-layout>
-1

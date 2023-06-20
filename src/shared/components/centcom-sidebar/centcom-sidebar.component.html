@@ -1,0 +1,11 @@
+<div>
+  <div *ngFor="let i of centcomLink">
+    <div class="link-container">
+      <nb-icon
+        icon="{{ i.icon }}"
+        ngClass="select-icon : menuSelected === {{ i.name }}"
+      />
+      <a class="link-text">{{ i.name }}</a>
+    </div>
+  </div>
+</div>

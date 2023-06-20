@@ -21,10 +21,10 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [AppComponent, routingComponents],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
     SharedModule,
     BrowserAnimationsModule,
-    NbThemeModule.forRoot({ name: 'dark' }),
+    NbThemeModule.forRoot({ name: 'home-theme' }),
     NbMenuModule.forRoot(),
     NbLayoutModule,
     NbEvaIconsModule,
@@ -35,6 +35,4 @@ import { SharedModule } from '../shared/shared.module';
   providers: [NbMenuService, NbSidebarService],
   bootstrap: [AppComponent],
 })
-export class AppModule {
-  
-}
+export class AppModule {}

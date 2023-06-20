@@ -38,10 +38,21 @@ a {
   background-color: #4da338;
 }
 // End Members TabsetComponent
+
+
+/* Members */
+
 // Members Accordion
 #team-section nb-accordion-item-header nb-icon {
   position: static;
   display: flex;
   justify-content: center;
   margin-left: 2rem;
+}
+
+
+/* Centcom */
+
+#centcom-container nb-sidebar.compacted  .link-text {
+  display: none;
 }
