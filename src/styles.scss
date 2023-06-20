@@ -53,6 +53,27 @@ a {
 
 /* Centcom */
 
-#centcom-container nb-sidebar.compacted  .link-text {
+#centcom-header nb-user .user-picture {
+  border: transparent;
+}
+
+#centcom-container nb-sidebar .scrollable {
+  margin-top: 1rem;
+  padding: 0;
+}
+#centcom-container nb-sidebar.expanded .link-container {
+  padding-left: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-right: 0.25rem;
+}
+#centcom-container nb-sidebar.compacted .link-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+#centcom-container nb-sidebar.compacted .link-text {
   display: none;
 }

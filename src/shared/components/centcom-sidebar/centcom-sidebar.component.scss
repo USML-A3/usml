@@ -1,6 +1,10 @@
 .link-container {
   cursor: pointer;
   display: flex;
+  border: 1px solid var(--background-color-1);
+}
+.link-container:hover {
+  background-color: var(--background-color-2);
 }
 .select-icon {
   color: var(--color-primary);
