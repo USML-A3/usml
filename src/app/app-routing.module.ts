@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CentcomComponent } from './pages/cetcom/centcom.component';
+import { CentcomComponent } from './pages/centcom/centcom.component';
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
