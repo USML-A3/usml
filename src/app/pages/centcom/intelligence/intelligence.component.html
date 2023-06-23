@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-md-4 intelligence-card-container">
+    <app-intelligence-new-card />
+  </div>
+
+  <div class="col-md-4 intelligence-card-container" *ngFor="let i of intelligenceRecord">
+    <app-intelligence-card [record]="i"/>
+  </div>
+</div>

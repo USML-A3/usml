@@ -1,0 +1,17 @@
+.mission-card-content-container h6 {
+  margin-bottom: 1rem;
+}
+.mission-description-container {
+  display: flex;
+}
+.mission-description-container img {
+  width: 40%;
+  height: auto;
+  margin-right: 0.5rem;
+}
+@media (max-width: 768px) {
+  .mission-description-container{
+    display: block;
+  }
+  
+}

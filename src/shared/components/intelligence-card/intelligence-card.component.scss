@@ -1,0 +1,69 @@
+#intelligence-flip-card {
+  background-color: var(--background-color-1);
+  height: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.card-size {
+  cursor: pointer;
+  margin: 0;
+}
+#intelligence-flip-card .front-container {
+  height: 100%;
+}
+#intelligence-flip-card .back-container {
+  height: 100%;
+}
+#intelligence-flip-card nb-card {
+  margin: 0;
+}
+.intelligence-flip-card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intelligence-flip-card-body img {
+  width: 90%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.card-title {
+  margin-bottom: 0.5rem;
+}
+.see-more-link {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+  color: whitesmoke;
+  z-index: 5;
+}
+.see-more-link:hover {
+  color: var(--color-primary-hover);
+}
+nb-card-back .intelligence-flip-card-body p {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 15;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+::ng-deep #intelligence-flip-card .back-container {
+  height: auto;
+}
+::ng-deep #intelligence-flip-card .front-container {
+  height: auto;
+}
+nb-card-back {
+  display: flex;
+  height: 100%;
+}
+nb-card-front {
+  display: flex;
+  height: 100%;
+}

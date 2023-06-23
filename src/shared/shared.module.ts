@@ -30,6 +30,8 @@ import { ModalFormComponent } from './components/modal-form/modal-form.component
 import { MediaCardComponent } from './components/media-card/media-card.component';
 import { CentcomSidebarComponent } from './components/centcom-sidebar/centcom-sidebar.component';
 import { CentcomHeaderComponent } from './components/centcom-header/centcom-header.component';
+import { IntelligenceCardComponent } from './components/intelligence-card/intelligence-card.component';
+import { IntelligenceNewCardComponent } from './components/intelligence-new-card/intelligence-new-card.component';
 
 const componentDeclarationExports = [
   NavbarComponent,
@@ -48,6 +50,8 @@ const componentDeclarationExports = [
   MediaCardComponent,
   CentcomSidebarComponent,
   CentcomHeaderComponent,
+  IntelligenceCardComponent,
+  IntelligenceNewCardComponent,
 ];
 @NgModule({
   declarations: componentDeclarationExports,

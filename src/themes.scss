@@ -1,15 +1,16 @@
 @forward "@nebular/theme/styles/theming";
 @use "@nebular/theme/styles/theming" as *;
 @use "@nebular/theme/styles/themes/dark";
+@use "@nebular/theme/styles/themes/cosmic";
 
 $nb-themes: nb-register-theme((), home-theme, dark);
 
 $nb-themes: nb-register-theme(
   (
-    background-color-1: #1f1f1f,
-    background-color-2: #303030,
-    color-primary: #bd2522,
-    color-primary-2: #E62E00,
+    // background-color-1: #1f1f1f,
+    // background-color-2: #303030,
+    // color-primary: #bd2522,
+    // color-primary-2: #E62E00,
   ),
   centcom-theme,
   dark

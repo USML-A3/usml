@@ -1,6 +1,6 @@
 <div>
   <div *ngFor="let i of centcomLink">
-    <div class="link-container">
+    <div class="link-container"  routerLink="{{i.name.toLowerCase()}}">
       <nb-icon
         icon="{{ i.icon }}"
         ngClass="select-icon : menuSelected === {{ i.name }}"

@@ -1,0 +1,26 @@
+<nb-flip-card
+  id="intelligence-flip-card"
+  class="card-size"
+  [showToggleButton]="false"
+  [flipped]="isFlipped"
+>
+  <nb-card-front>
+    <nb-card (click)="handleClick()">
+      <nb-card-body class="intelligence-flip-card-body">
+        <img src="../../../assets/img/usml/grid/Kivu 1 square.jpg" alt="" />
+        <h6>{{ record.title }}</h6>
+      </nb-card-body>
+    </nb-card>
+  </nb-card-front>
+  <nb-card-back>
+    <nb-card (click)="handleClick()">
+      <nb-card-body class="intelligence-flip-card-body">
+        <h6 class="card-title">{{ record.title }}</h6>
+        <p>
+          {{ record.text }}
+        </p>
+        <a class="see-more-link" routerLink="1" [queryParams]="record">See more...</a>
+      </nb-card-body>
+    </nb-card>
+  </nb-card-back>
+</nb-flip-card>

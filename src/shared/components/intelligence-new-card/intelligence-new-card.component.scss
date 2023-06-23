@@ -1,0 +1,17 @@
+.new-card-size {
+  height: 100%;
+}
+.new-card-size nb-card-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.new-card-size nb-card-body:hover {
+  background-color: var(--color-info-focus-border);
+}
+.new-card-size nb-icon {
+  transform: scale(2.5);
+}

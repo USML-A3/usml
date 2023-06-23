@@ -1,13 +1,13 @@
 .link-container {
   cursor: pointer;
   display: flex;
-  border: 1px solid var(--background-color-1);
+  border: 1px solid var(--background-basic-color-1);
 }
 .link-container:hover {
-  background-color: var(--background-color-2);
+  background-color: var(--background-basic-color-2);
 }
 .select-icon {
-  color: var(--color-primary);
+  color: var(--color-primary-400);
 }
 .link-text {
   margin-left: 0.5rem;
