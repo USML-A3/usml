@@ -52,7 +52,12 @@
   transform: scale(1.5);
 }
 .sidebar-items {
+  display: flex;
+  flex-direction: column;
   font-size: 1.25rem;
+}
+.sidebar-items a {
+  padding-top: 0.5rem;
 }
 @media (max-width: 576px) {
   .navbar-link {

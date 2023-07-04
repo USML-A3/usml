@@ -1,0 +1,11 @@
+.login {
+  background-color: var(--layout-background-color);
+  display: flex;
+  
+  flex-direction: column;
+}
+.login a {
+  align-self: center;
+  margin-top: 0.5rem;
+  color: white;
+}
